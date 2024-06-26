@@ -480,7 +480,7 @@ extension UIViewController {
     open func addPullUpController(_ pullUpController: PullUpController,
                                   initialStickyPointOffset: CGFloat,
                                   animated: Bool,
-                                  to superview: UIView?,
+                                  to superview: UIView? = nil,
                                   completion: ((Bool) -> Void)? = nil) {
         assert(!(self is UITableViewController), "It's not possible to attach a PullUpController to a UITableViewController. Check this issue for more information: https://github.com/MarioIannotta/PullUpController/issues/14")
         addChild(pullUpController)
